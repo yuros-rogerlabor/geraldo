@@ -77,19 +77,13 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
-      - name: Prepare upstream data
-        run: |
-          echo "upstream"
-      - name: Prepare packages data
-        run: |
-          echo "packages"
-      - name: Create envi vars
-        run: cat builder/config >> $GITHUB_ENV
-      - name: listing files
+      - name: Append site config to github envi
+        run: cat builder/conf >> $GITHUB_ENV
+      - name: Build site external data to root
         run: |
           echo $app_github_dev_name
-          chmod +x builder/prepare
-          ./builder/prepare 
+          chmod +x builder/sites
+          ./builder/sites 
         shell: bash
       - name: Build the site
         run: |
