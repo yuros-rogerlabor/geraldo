@@ -1,10 +1,14 @@
 #!/bin/env bash
 
-source ./builder/config
+
 
 
 function packers_wikigen_takers() {
-    echo "get "
+    source ./builder/config
+
+    echo "username: $app_github_dev_name "
+    echo "reponame: $app_github_dev_repo "
+    
     test -d ./temp && rm -fr ./temp
     git clone "https://github.com/$app_github_dev_name/$app_github_dev_repo.wiki.git" ./temp
 }
