@@ -13,7 +13,7 @@ ssh_keys_github=""
 app_github_dev_name="yuros-devlabs"
 app_github_dev_repo="geraldo"
 
-## package maintener 
+
 app_github_pkg_name="yuros-devlabs"
 app_github_pkg_repo="geraldo"
 
