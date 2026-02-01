@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs 1 on karim</title>
+    <link>http://localhost:1313/docs/</link>
+    <description>Recent content in Docs 1 on karim</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>acknowledgement</title>
+      <link>http://localhost:1313/docs/acknowledgement/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/acknowledgement/</guid>
+      <description>&lt;p&gt;Welcome to the packers wiki!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>home</title>
+      <link>http://localhost:1313/docs/home/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/home/</guid>
+      <description>&lt;p&gt;Welcome to the packers wiki!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>installation</title>
+      <link>http://localhost:1313/docs/installation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/docs/installation/</guid>
+      <description>&lt;p&gt;here&amp;rsquo;s for installation guide&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
