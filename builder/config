@@ -18,9 +18,5 @@ app_github_pkg_name="yuros-devlabs"
 app_github_pkg_repo="geraldo"
 
 
-app_github_dev_name=""
-app_github_dev_repo=""
-
-
 app_gitlab_pkg_name=""
 app_gitlab_pkg_repo=""

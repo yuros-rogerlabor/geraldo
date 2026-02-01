@@ -4,43 +4,45 @@
 
 
 function packers_wikigen_takers() {
-    source builder/config
-
     ls -la
     echo $(pwd)
 
-    echo "username: $app_github_dev_name "
-    echo "reponame: $app_github_dev_repo "
+    echo "username: $app_github_dev_name"
+    echo "reponame: $app_github_dev_repo"
 
-    test -d ./temp && rm -fr ./temp
-    git clone "https://github.com/$app_github_dev_name/$app_github_dev_repo.wiki.git" ./temp
+    #test -d ./temp && rm -fr ./temp
+    #git clone "https://github.com/$app_github_dev_name/$app_github_dev_repo.wiki.git" ./temp
 }
 
 
 function packers_wikigen_prepar() {
-    mv ./content/docs/_index.md ./content/wiki.md 
-    rm -fr ./content/docs/*
+    #mv ./content/docs/_index.md ./content/wiki.md 
+    #rm -fr ./content/docs/*
+    echo ""
 }
 
 
 function packers_wikigen_deploy() {
 
-    local list=$( ls ./temp/ )
+    echo ""
 
-    for article in $list
-    do
-        local title=$(echo "$article" | sed 's/.md//g')
-        echo "---" > ./content/docs/${title,,}.md
-        echo "title : ${title,,}" >> ./content/docs/${title,,}.md
-        echo "---" >> ./content/docs/${title,,}.md
-        cat ./temp/$article >> ./content/docs/${title,,}.md
-    done
+    #local list=$( ls ./temp/ )
+
+    #for article in $list
+    #do
+    #    local title=$(echo "$article" | sed 's/.md//g')
+    #    echo "---" > ./content/docs/${title,,}.md
+    #    echo "title : ${title,,}" >> ./content/docs/${title,,}.md
+    #    echo "---" >> ./content/docs/${title,,}.md
+    #    cat ./temp/$article >> ./content/docs/${title,,}.md
+    #done
 }
 
 
 function packers_wikigen_finish() {
-    mv ./content/wiki.md  ./content/docs/_index.md 
-    rm -fr ./temp
+    echo ""
+    #mv ./content/wiki.md  ./content/docs/_index.md 
+    #rm -fr ./temp
 }
 
 
