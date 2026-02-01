@@ -1,0 +1,34 @@
+# GENERALS
+title="zaza"
+hosts="https://localhost/"
+langs="en-US"
+
+
+# SECURITY
+## keypath
+pat_keys_github=""
+ssh_keys_github=""
+
+pat_keys_gitlab=""
+ssh_keys_github=""
+
+
+# GITHUB 
+## package upstream
+app_github_dev_name="yuros-devlabs"
+app_github_dev_repo="geraldo"
+
+## package maintener 
+app_github_pkg_name="yuros-devlabs"
+app_github_pkg_repo="geraldo"
+
+
+# GITLAB
+## package upstream
+app_github_dev_name=""
+app_github_dev_repo=""
+
+
+## package maintener 
+app_gitlab_pkg_name=""
+app_gitlab_pkg_repo=""
