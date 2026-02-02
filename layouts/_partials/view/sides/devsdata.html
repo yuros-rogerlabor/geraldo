@@ -11,7 +11,7 @@
             <div class="person">
                 <img src="{{ $github_data_cont.avatar_url }}" class="avatar" alt="Maintainer">
                 <div class="content">
-                    <div class="name suprem">@{{ .login }}</div>
+                    <div class="name suprem">@{{ $github_data_cont.login }}</div>
                     <a href="{{ $github_data_cont.html_url }}" target="_blank" class="role infers">Follow</a>
                 </div>
             </div>
